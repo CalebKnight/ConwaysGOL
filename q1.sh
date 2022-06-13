@@ -1,0 +1,1 @@
+grep "[^aeiou]$" names.txt
