@@ -81,22 +81,24 @@ int **getStartingBoard(char *fileName, int rows, int cols)
 
 int getTempStringLength(int rows, int cols)
 {
+    int length;
     if (rows < 10 && cols < 10)
     {
-        return 5;
+        length = 5;
     }
     else if (rows < 10 && cols >= 10)
     {
-        return 6;
+        length = 6;
     }
     else if (rows >= 10 && cols < 10)
     {
-        return 6;
+        length = 6;
     }
     else
     {
-        return 8;
+        length = 8;
     }
+    return (length);
 }
 
 void freeStartingBoard(int **startingBoard, int rows)
